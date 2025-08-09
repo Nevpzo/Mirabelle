@@ -198,7 +198,7 @@ def on_motion(event):
         lon, lat = ccrs.PlateCarree().transform_point(
             event.xdata, event.ydata, src_crs=projection
         )
-        root.title(f"MIRABELLE - Lat: {lat:.2f}, Lon: {lon:.2f}")
+        root.title(f"Mirabelle - Lat: {lat:.2f}, Lon: {lon:.2f}")
 
     if panning and event.inaxes:
         dx = event.x - pan_start[0]
@@ -442,7 +442,7 @@ def show_help():
 
 root = tk.Tk()
 # root.iconbitmap("C:/Users/teren/code/.venv/RACMO-Arctic/masks/myIcon.ico")
-root.title("MIRABELLE")
+root.title("Mirabelle")
 root.geometry("600x800")
 root.protocol("WM_DELETE_WINDOW", quit_me)
 

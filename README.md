@@ -1,7 +1,7 @@
 # Mirabelle
 Interactive tool to manually define a polygonal mask and store it in netCDF format.
 
-<p align="center"> <img src="/img/overview.png" align="center", style="max-width:70%;"> </p>
+<p align="center"> <img src="/img/overview.png" align="center", style="max-width:50%;"> </p>
 
 When working with climate data, it is often essential to create masks that isolate specific regions for targeted analysis. While pre-made masks sometimes exist, adapting them to match a given dataset’s grid and format can be time-consuming. This tool provides a fast, interactive way to draw custom polygonal masks directly on a map and export them in netCDF format, ready for use in climate data processing and analysis. While this version is centered on Greenland, it can be easily adapted to any region by providing a reference netCDF file with a lon/lat grid and changing the map extent.
 

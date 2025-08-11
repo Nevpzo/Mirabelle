@@ -1,10 +1,31 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+title: Mirabelle
+message: Interactive polygon mask creator from netCDF datasets
+type: software
 authors:
-  - name: Nevpzo
-  - email: nnevpzo@gmail.com
-title: "Mirabelle: Interactive polygon mask creator from netCDF datasets"
-version: "1.4"
-doi: "https://doi.org/10.5281/zenodo.16789952"
-date-released: "08-11-2025"
-url: "https://github.com/nevpzo/Mirabelle"
+  - given-names: Nevpzo
+    email: nnevpzo@gmail.com
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.16789952
+repository-code: 'https://github.com/Nevpzo/Mirabelle/'
+abstract: >-
+  When working with climate data, it is often essential to
+  create masks that isolate specific regions for targeted
+  analysis. While pre-made masks sometimes exist, adapting
+  them to match a given dataset's grid and format can be
+  time-consuming. This tool provides a fast, interactive way
+  to draw custom polygonal masks directly on a map and
+  export them in netCDF format, ready for use in climate
+  data processing and analysis. While this version is
+  centered on Greenland, it can be easily adapted to any
+  region by providing a reference netCDF file with a lon/lat
+  grid and changing the map extent.
+keywords:
+  - gis
+  - mask
+  - mapping
+  - climate-data
+license: GPL-3.0
+version: '1.3'
+date-released: '2025-08-09'

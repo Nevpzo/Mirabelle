@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - name: Nevpzo
+  - email: nnevpzo@gmail.com
+title: "Mirabelle: Interactive polygon mask creator from netCDF datasets"
+version: "1.4"
+doi: "https://doi.org/10.5281/zenodo.16789952"
+date-released: "08-11-2025"
+url: "https://github.com/nevpzo/Mirabelle"

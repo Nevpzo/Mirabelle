@@ -1,11 +1,19 @@
 # Mirabelle
-Interactive tool to manually define a polygonal mask and store it in netCDF format.
+![Python](https://img.shields.io/badge/python-3.8+-blue) ![Status](https://img.shields.io/badge/status-active-success) [![Last Commit](https://img.shields.io/github/last-commit/Nevpzo/Mirabelle)](https://github.com/Nevpzo/Mirabelle/commits/main)
 
-<p align="center"> <img src="/img/overview.png" align="center"> </p>
+ [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16789952.svg)](https://doi.org/10.5281/zenodo.16789952)
 
-When working with climate data, it is often essential to create masks that isolate specific regions for targeted analysis. While pre-made masks sometimes exist, adapting them to match a given dataset’s grid and format can be time-consuming. This tool provides a fast, interactive way to draw custom polygonal masks directly on a map and export them in netCDF format, ready for use in climate data processing and analysis. While this version is centered on Greenland, it can be easily adapted to any region by providing a reference netCDF file with a lon/lat grid and changing the map extent.
+Interactive mapping tool to manually define polygonal masks and export them in netCDF format, ready for use with climate and weather models.
 
-The tool supports zooming, panning, undoing points, clearing the view, and displaying the computed area of each selection.
+<p align="center"> <img src="overview.png" align="center" width="70%"> </p>
+
+When working with climate or weather data, isolating specific regions for targeted analysis is often essential. Pre-made masks sometimes exist, but adapting them to match the model's grid can be time consuming.
+
+Mirabelle offers a fast, intuitive way to:
+
+- Load a reference netCDF file from your model (containing longitude and latitude information) and zoom to the dataset’s region
+- Draw custom polygonal masks directly on the map
+- Export masks in netCDF format for direct integration into model workflows
 
 # Requirements
 The program requires:
@@ -24,7 +32,13 @@ pip install numpy matplotlib cartopy netCDF4 shapely pyproj
 
 # Usage
 
-The interface will display a stereographic projection of Greenland. You can then define polygons with the mouse:
+```bash
+git clone https://github.com/Nevpzo/Mirabelle.git
+cd Mirabelle
+python Mirabelle.py
+```
+
+The tool opens showing a global map, you have to load a reference netCDF file containing a lon/lat grid. You can then define polygons with the mouse:
 
 **Mouse controls:**
 - **Left Click**: Place a vertex of the polygon. Vertices are connected automatically.
@@ -49,5 +63,25 @@ The interface will display a stereographic projection of Greenland. You can then
 - `Ctrl+Backspace` → Clear view
 
 # Notes
-- Make sure the path to the reference netCDF file is correct before running.  
+- The reference file must contain longitude and latitude variables with names from this list:
+
+<div align="center">
+
+| Longitude   | Latitude |
+| ----------- | -------- |
+| longitude   | latitude |
+| lon         | lat      |
+| x           | y        |
+| long        |          |
+
+</div>
+
 - Multiple polygons can be drawn before saving. They will be combined into a single mask.
+
+### Contributing
+
+Mirabelle is an early-stage research tool.   If you encounter bugs, have feature requests, or want to contribute, please reach out by email: nnevpzo@gmail.com.  
+
+If you use Mirabelle in your research, please cite: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16789952.svg)](https://doi.org/10.5281/zenodo.16789952)
+
+Mirabelle is released under the GNU GPL v3 License.

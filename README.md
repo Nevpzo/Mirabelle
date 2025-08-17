@@ -5,7 +5,7 @@
 
 Interactive mapping tool to manually define polygonal masks and export them in netCDF format, ready for use with climate and weather models.
 
-<p align="center"> <img src="overview.png" align="center" width="70%"> </p>
+<p align="center"> <img src="img/overview.png" align="center" width="70%"> </p>
 
 When working with climate or weather data, isolating specific regions for targeted analysis is often essential. Pre-made masks sometimes exist, but adapting them to match the model's grid can be time consuming.
 

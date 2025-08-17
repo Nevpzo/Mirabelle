@@ -38,7 +38,7 @@ cd Mirabelle
 python Mirabelle.py
 ```
 
-The tool opens showing a global map, you have to load a reference netCDF file containing a lon/lat grid. You can then define polygons with the mouse:
+The tool opens showing a global map, you have to load a reference netCDF file containing longitude and latitude information. You can then define polygons with the mouse:
 
 **Mouse controls:**
 - **Left Click**: Place a vertex of the polygon. Vertices are connected automatically.

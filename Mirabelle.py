@@ -1,5 +1,5 @@
 """
-Last update: 11/08/2025
+Last update: 17/08/2025
 Version: Mirabelle 1.4
 
 Description:
@@ -593,5 +593,6 @@ root.bind('<Control-q>', quit_me)
 
 # =================================================
 # Mainloop
+
 
 root.mainloop()

@@ -1,7 +1,7 @@
 # Mirabelle
 ![Python](https://img.shields.io/badge/python-3.8+-blue) ![Status](https://img.shields.io/badge/status-active-success) [![Last Commit](https://img.shields.io/github/last-commit/Nevpzo/Mirabelle)](https://github.com/Nevpzo/Mirabelle/commits/main)
 
- [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16789952.svg)](https://doi.org/10.5281/zenodo.16789952)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE) [![DOI](https://zenodo.org/badge/1035065024.svg)](https://zenodo.org/badge/latestdoi/1035065024)
 
 Interactive mapping tool to manually define polygonal masks and export them in netCDF format, ready for use with climate and weather models.
 

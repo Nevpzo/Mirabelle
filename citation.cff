@@ -7,7 +7,7 @@ authors:
     email: nnevpzo@gmail.com
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.16789952
+    value: 10.5281/zenodo.16789951
 repository-code: 'https://github.com/Nevpzo/Mirabelle/'
 abstract: >-
   When working with climate data, it is often essential to

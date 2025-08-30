@@ -82,6 +82,6 @@ The tool opens showing a global map, you have to load a reference netCDF file co
 
 Mirabelle is an early-stage research tool.   If you encounter bugs, have feature requests, or want to contribute, please reach out by email: nnevpzo@gmail.com.  
 
-If you use Mirabelle in your research, please cite: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16789952.svg)](https://doi.org/10.5281/zenodo.16789952)
+If you use Mirabelle in your research, please cite: [![DOI](https://zenodo.org/badge/1035065024.svg)](https://zenodo.org/badge/latestdoi/1035065024)
 
 Mirabelle is released under the GNU GPL v3 License.

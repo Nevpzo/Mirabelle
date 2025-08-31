@@ -531,7 +531,7 @@ class MirabelleApp:
             return
 
         for i, poly in enumerate(self.plotgons):
-            transformer = pyproj.Transformer.from_crs("EPSG:4326", pyproj.CRS("EPSG:3413"), always_xy=True).transform
+            transformer = pyproj.Transformer.from_crs("EPSG:4326", "EPSG:6933", always_xy=True).transform
             polygon_projected = transform(transformer, self.polygons[i])
             area = polygon_projected.area
 
@@ -617,3 +617,4 @@ class MirabelleApp:
 root = tk.Tk()
 app = MirabelleApp(root)
 root.mainloop()
+

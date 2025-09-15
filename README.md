@@ -1,11 +1,11 @@
 # Mirabelle
 ![Python](https://img.shields.io/badge/python-3.8+-blue) ![Status](https://img.shields.io/badge/status-active-success) [![Last Commit](https://img.shields.io/github/last-commit/Nevpzo/Mirabelle)](https://github.com/Nevpzo/Mirabelle/commits/main)
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE) [![DOI](https://zenodo.org/badge/1035065024.svg)](https://zenodo.org/badge/latestdoi/1035065024)
+ [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16789951.svg)](https://doi.org/10.5281/zenodo.16789951)
 
-Interactive mapping tool to manually define polygonal masks and export them in netCDF format, ready for use with climate and weather models.
+Interactive mapping tool to draw polygonal masks interactively and export them as NetCDF for geophysical models or GeoJSON for GIS use.
 
-<p align="center"> <img src="img/overview.png" align="center"> </p>
+<p align="center"> <img src="img/overview.png" align="center" width="70%"> </p>
 
 When working with climate or weather data, isolating specific regions for targeted analysis is often essential. Pre-made masks sometimes exist, but adapting them to match the model's grid can be time consuming.
 
@@ -24,10 +24,11 @@ The program requires:
 - `netCDF4`
 - `shapely`
 - `pyproj`
+- `json`
 
 Install missing dependencies with:
 ```
-pip install numpy matplotlib cartopy netCDF4 shapely pyproj
+pip install numpy matplotlib cartopy netCDF4 shapely pyproj json
 ```
 
 # Usage
@@ -38,7 +39,7 @@ cd Mirabelle
 python Mirabelle.py
 ```
 
-The tool opens showing a global map, you have to load a reference netCDF file containing longitude and latitude information. You can then define polygons with the mouse:
+The tool opens showing a global map, if you want to create a netCDF mask, you have to load a reference netCDF file containing a lon/lat grid. Otherwise, you can use the tool as is. You can then define polygons with the mouse:
 
 **Mouse controls:**
 - **Left Click**: Place a vertex of the polygon. Vertices are connected automatically.
@@ -47,11 +48,12 @@ The tool opens showing a global map, you have to load a reference netCDF file co
 - **Scroll Wheel**: Zoom in and out.
 - **Ctrl + Right Click**: Remove a polygon.
 
-**Buttons:**
+**Options:**
 - **Undo Last Point**: Removes the most recent vertex from the active polygon.
 - **Reset View**: Restores the original zoom and position.
 - **Clear View**: Removes all polygons and resets the map.
-- **Save As**: Exports the current mask to a `.nc` file.
+- **Save As** > netCDF: Exports the current mask to a `.nc` file.
+- **Save As** > GeoJSON: Exports the current mask to a `.geojson` file.
 - **Clear on save** *(checkbox)*: Clears all polygons after saving.
 - **Display area** *(checkbox)*: Shows polygon area in m² on the map.
 

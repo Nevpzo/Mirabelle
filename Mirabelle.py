@@ -1,5 +1,5 @@
 """
-Last update: 09/09/2025
+Last update: 15/09/2025
 Version: Mirabelle 1.6
 
 Description:
@@ -675,3 +675,4 @@ class MirabelleApp:
 root = tk.Tk()
 app = MirabelleApp(root)
 root.mainloop()
+

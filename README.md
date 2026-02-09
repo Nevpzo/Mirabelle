@@ -1,7 +1,7 @@
 # Mirabelle
 ![Python](https://img.shields.io/badge/python-3.8+-blue) ![Status](https://img.shields.io/badge/status-active-success) [![Last Commit](https://img.shields.io/github/last-commit/Nevpzo/Mirabelle)](https://github.com/Nevpzo/Mirabelle/commits/main)
 
- [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16789951.svg)](https://doi.org/10.5281/zenodo.16789951)
+ [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 Interactive mapping tool to draw polygonal masks interactively and export them as NetCDF for geophysical models or GeoJSON for GIS use.
 
@@ -83,7 +83,5 @@ The tool opens showing a global map, if you want to create a netCDF mask, you ha
 ### Contributing
 
 Mirabelle is an early-stage research tool. If you encounter bugs, have feature requests, or want to contribute, please [open an issue](https://github.com/Nevpzo/Mirabelle/issues) or contact me by email: nnevpzo@gmail.com.
-
-If you use Mirabelle in your research, you may cite: [![DOI](https://zenodo.org/badge/1035065024.svg)](https://zenodo.org/badge/latestdoi/1035065024)
 
 Mirabelle is released under the GNU GPL v3 License.

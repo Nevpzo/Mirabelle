@@ -13,7 +13,6 @@ Update Note:
 Contact:
     - nnevpzo@gmail.com
     - GitHub: https://github.com/Nevpzo/Mirabelle/
-    - Zenodo: https://doi.org/10.5281/zenodo.16789951
 """
 
 # =================================================

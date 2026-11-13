@@ -3,7 +3,7 @@
 
  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
-Interactive mapping tool to draw polygonal masks interactively and export them as NetCDF for geophysical models or GeoJSON for GIS use.
+Interactive Python tool to quickly sketch preliminary geographical masks for exploratory analysis of geophysical datasets, with export to NetCDF or GeoJSON for further use.
 
 <p align="center"> <img src="img/overview.png" align="center" width="70%"> </p>
 
